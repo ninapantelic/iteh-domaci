@@ -54,7 +54,7 @@ class Gost{
  
     public static function add(Gost $gost, mysqli $conn)
     {
-        $query = "INSERT INTO gosti(name,surname, email, phone) VALUES('$gost->name','$gost->surname','$gost->email','$gost->phone')";
+        $query = "INSERT INTO gosti(name, surname, email, phone) VALUES('$gost->name','$gost->surname','$gost->email','$gost->phone')";
         return $conn->query($query);
     }
 }
